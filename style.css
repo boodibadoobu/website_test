@@ -110,7 +110,7 @@ body{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
     transition: background-color 0.3s ease; /* Smooth transition for hover */
     position: absolute; /* Position the button */
-    top: 65%; /* Center vertically */
+    top: 60%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust for centering */
     z-index: 10; /* Ensure it is above other elements */

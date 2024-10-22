@@ -10,7 +10,7 @@ window.onload = () => {
         })
     }
     mainContainer.onmouseleave = () => {
-        images.forEach((images) => {
+        images.forEach((image) => {
             image.style.opacity = 1;
         })
     }
@@ -29,6 +29,7 @@ window.onload = () => {
         }    
         image.onmouseleave = () => {
             video[index].pause();
+            video.currentTime = 0;
         }    
     })
 }

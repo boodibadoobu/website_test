@@ -29,7 +29,6 @@ window.onload = () => {
         }    
         image.onmouseleave = () => {
             video[index].pause();
-            video.currentTime = 0;
         }    
     })
 }

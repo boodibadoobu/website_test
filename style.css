@@ -97,3 +97,43 @@ body{
 .main-container .image-preview:hover video{
     display: block;
 }
+
+.glass-button {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    background-color: rgba(255, 255, 255, 0.2); /* Background color */
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    padding: 10px 15px; /* Adjust padding to fit logo and text */
+    font-size: 16px; /* Font size for text */
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+    position: absolute; /* Position the button */
+    top: 65%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    z-index: 10; /* Ensure it is above other elements */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.glass-button:hover {
+    background-color: rgba(255, 255, 255, 0.6); /* Change background on hover */
+}
+
+.logo-size {
+    width: 20px; /* Set logo width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 8px; /* Space between logo and text */
+}
+
+.github-text { /* Add styling for the text */
+    color: white; /* Ensure text color is white */
+    font-size: 16px; /* Consistent font size */
+    margin: 0; /* Remove any margin */
+}
+
+
+
+  

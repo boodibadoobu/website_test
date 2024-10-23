@@ -132,20 +132,20 @@ body{
     margin-right: 8px; 
 }
 
-.github-text { /* Add styling for the text */
-    color: white; /* Ensure text color is white */
-    font-size: 16px; /* Consistent font size */
-    margin: 0; /* Remove any margin */
+.github-text {
+    color: white; 
+    font-size: 16px; 
+    margin: 0; 
 }
 
 .navbar {
     position: relative;
-    background: linear-gradient(135deg, rgba(10, 10, 30, 0.9), rgba(36, 36, 60, 0.9)); /* Deep Blue gradient background */
+    background: linear-gradient(135deg, rgba(10, 10, 30, 0.9), rgba(36, 36, 60, 0.9)); 
     padding: 1rem 2rem;
     border-radius: 0px; 
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7); 
     backdrop-filter: blur(10px); 
-    border: 0px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+    border: 0px solid rgba(255, 255, 255, 0.1); 
 }
 
 .nav-links {
@@ -168,29 +168,28 @@ body{
     padding: 5px 0;
 }
 
-/* Individual colors for each link */
+
 .nav-links a:nth-child(1) {
-    color: #1E90FF; /* Deep Sky Blue */
+    color: #1E90FF; 
 }
 .nav-links a:nth-child(2) {
-    color: #00FF7F; /* Spring Green */  
+    color: #00FF7F;
 }
 .nav-links a:nth-child(3) {
-    color: #FFD700; /* Gold */
+    color: #FFD700; 
 }
 .nav-links a:nth-child(4) {
-    color: #FF4500; /* Orange Red */
+    color: #FF4500; 
 }
 .nav-links a:nth-child(5) {
-    color: #8A2BE2; /* Blue Violet */
+    color: #8A2BE2; 
 }
 
-/* Hover effect */
+
 .nav-links a:hover {
-    color: #fff; /* Change to white on hover */
+    color: #fff; 
 }
 
-/* Futuristic underline effect */
 .nav-links a::after {
     content: "";
     position: absolute;
@@ -198,7 +197,7 @@ body{
     left: 0;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #fff, transparent); /* Bright underline gradient */
+    background: linear-gradient(90deg, transparent, #fff, transparent); 
     transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.5s ease;
@@ -208,7 +207,6 @@ body{
     transform: scaleX(1);
 }
 
-/* Adding a futuristic glow */
 .navbar::before {
     content: '';
     position: absolute;
@@ -217,9 +215,9 @@ body{
     bottom: -2px;
     left: -2px;
     z-index: -1;
-    background: rgba(10, 10, 30, 0.9); /* Deep Blue background for glow effect */
+    background: rgba(10, 10, 30, 0.9);
     filter: blur(20px);
-    opacity: 0.5; /* Subtle glow */
+    opacity: 0.5;
     border-radius: 30px;
 }
 

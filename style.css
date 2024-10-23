@@ -11,7 +11,8 @@
 }
 
 html{
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 body{
@@ -19,9 +20,12 @@ body{
     height: 100vh;
 }
 
+
 .main-container{
     width: 100%;
     height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
     display: flex;
     background: black;
 }
@@ -30,19 +34,19 @@ body{
     flex: 1;
     position: relative;
     overflow: hidden;
-    transition: all 1s cubic-bezier(0.08, 0.82, 0.17, 1);
+    transition: all 2s cubic-bezier(0.08, 0.82, 0.17, 1);
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
 }
 
 .main-container .image-preview:hover{
-    flex: 2;
+    flex: 3;
 }
 
 .main-container .image-preview img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: all 1s cubic-bezier(0.08, 0.82, 0.17, 1);
+    transition: all 4s cubic-bezier(0.08, 0.82, 0.17, 1);
 }
 
 .main-container .image-preview:hover img{
@@ -58,7 +62,7 @@ body{
     background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
     opacity: 0;
     transform: translateY(10%);
-    transition: all 1s cubic-bezier(0.08, 0.82, 0.17, 1);
+    transition: all 3s cubic-bezier(0.12, 0.82, 0.17, 1);
 }
 
 .main-container .image-preview:hover .overlay{
@@ -72,7 +76,7 @@ body{
     padding: 1rem;
     opacity: 0;
     transform: translateY(100%);
-    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 3s cubic-bezier(0.3, 1, 0.32, 1);
 }
 
 .main-container .image-preview .overlay .desc h1{
@@ -99,33 +103,33 @@ body{
 }
 
 .glass-button {
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Center items vertically */
-    background-color: rgba(255, 255, 255, 0.2); /* Background color */
+    display: flex; 
+    align-items: center; 
+    background-color: rgba(255, 255, 255, 0.2); 
     border: none;
-    border-radius: 20px; /* Rounded corners */
-    padding: 10px 15px; /* Adjust padding to fit logo and text */
-    font-size: 16px; /* Font size for text */
+    border-radius: 20px; 
+    padding: 10px 15px; 
+    font-size: 16px; 
     cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
-    transition: background-color 0.3s ease; /* Smooth transition for hover */
-    position: absolute; /* Position the button */
-    top: 60%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust for centering */
-    z-index: 10; /* Ensure it is above other elements */
-    white-space: nowrap; /* Prevent text wrapping */
-    overflow: hidden; /* Ensure no overflow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.5s ease;
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    position: absolute; 
+    top: 60%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 10; 
+    white-space: nowrap; 
+    overflow: hidden; 
 }
 
 .glass-button:hover {
-    background-color: rgba(255, 255, 255, 0.6); /* Change background on hover */
+    background-color: rgba(255, 255, 255, 0.6); 
 }
 
 .logo-size {
-    width: 20px; /* Set logo width */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 8px; /* Space between logo and text */
+    margin-right: 8px; 
 }
 
 .github-text { /* Add styling for the text */
@@ -133,6 +137,96 @@ body{
     font-size: 16px; /* Consistent font size */
     margin: 0; /* Remove any margin */
 }
+
+.navbar {
+    position: relative;
+    background: linear-gradient(135deg, rgba(10, 10, 30, 0.9), rgba(36, 36, 60, 0.9)); /* Deep Blue gradient background */
+    padding: 1rem 2rem;
+    border-radius: 0px; 
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7); 
+    backdrop-filter: blur(10px); 
+    border: 0px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+    position: relative;
+    padding: 5px 0;
+}
+
+/* Individual colors for each link */
+.nav-links a:nth-child(1) {
+    color: #1E90FF; /* Deep Sky Blue */
+}
+.nav-links a:nth-child(2) {
+    color: #00FF7F; /* Spring Green */  
+}
+.nav-links a:nth-child(3) {
+    color: #FFD700; /* Gold */
+}
+.nav-links a:nth-child(4) {
+    color: #FF4500; /* Orange Red */
+}
+.nav-links a:nth-child(5) {
+    color: #8A2BE2; /* Blue Violet */
+}
+
+/* Hover effect */
+.nav-links a:hover {
+    color: #fff; /* Change to white on hover */
+}
+
+/* Futuristic underline effect */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #fff, transparent); /* Bright underline gradient */
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.5s ease;
+}
+
+.nav-links a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Adding a futuristic glow */
+.navbar::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    z-index: -1;
+    background: rgba(10, 10, 30, 0.9); /* Deep Blue background for glow effect */
+    filter: blur(20px);
+    opacity: 0.5; /* Subtle glow */
+    border-radius: 30px;
+}
+
+
+
+
+
 
 
 

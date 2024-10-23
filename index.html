@@ -7,46 +7,62 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
-        <title>Hsr</title>
+        <title>Portofolio Malvin</title>
     </head>    
 <body>
+
+    <div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a onclick="window.open('https://github.com/boodibadoobu?tab=repositories', '_blank')">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <div class="main-container">
+
         <div class="image-preview">
             <img src="./stelle.webp" alt="char">
-            <button class="glass-button" onclick="window.open('https://github.com/boodibadoobu', '_blank')">
-                <img src="./github.png" alt="github" class="logo-size">
-                <span class="github-text">Github</span>
+            <button title="Find me on Instagram" class="glass-button" onclick="window.open('https://www.instagram.com/boodibadoobu/', '_blank')" >
+                <img src="./Instagram.png" alt="Instagram" class="logo-size">
+                <span class="github-text">Instagram</span>
             </button>            
-            <video paused loop muted playsinline aria-hidden="true">
+            <video paused loop playsinline aria-hidden="true" >
                 <source src="./stelle.webm" type="video/webm">
             </video>
             <span class="overlay">
                 <div class="desc">
-                    <h1>Mantap Gaming</h1>
-<p>Ayo ayo ganyang fufufafa, gokil ganyang fufufafa sekarang juga</p>
+                    <h1>Welcome to My Personal Space! 🌟</h1>
+<p>I'm embracing the unknown and discovering new paths. Let's take this journey of exploration together!</p>
                 </div>
             </span>
         </div>
+
         <div class="image-preview">
             <img src="./kafka.webp" alt="char">
-            <button class="glass-button" onclick="window.open('https://www.instagram.com/boodibadoobu/', '_blank')">
-                <img src="./Instagram.png" alt="instagram" class="logo-size">
-                <span class="github-text">Instagram</span>
+            <button title="Find me on Github" class="glass-button" onclick="window.open('https://github.com/boodibadoobu', '_blank')">
+                <img src="./github.png" alt="Github" class="logo-size">
+                <span class="github-text">Github</span>
             </button>
-            <video paused loop muted playsinline aria-hidden="true">
+            <video paused loop playsinline aria-hidden="true">
                 <source src="./kafka.webm" type="video/webm">
             </video>
             <span class="overlay">
                 <div class="desc">
-                    <h1>Sukmadik</h1>
-<p>Anomali hidup di Karawang, suka menatap wajah kuda hitam didepan orang - orang<p>
+                    <h1>My coding journey</h1>
+<p>Check out my GitHub to see the projects I've been passionate about!<p>
                 </div>
             </span>
         </div>
+
         <div class="image-preview">
             <img src="./acheron.webp" alt="char">
-            <video paused loop muted playsinline aria-hidden="true">
-                <source src="./acheron.webm" type="video/webm">
+            <video paused loop playsinline aria-hidden="true" onclick="window.open('https://honkai-star-rail.fandom.com/wiki/Acheron/', '_blank')">
+                <source src="./acheron.webm" type="video/webm" >
             </video>
             <span class="overlay">
                 <div class="desc">
@@ -55,13 +71,14 @@
                 </div>
             </span>
         </div>
+
         <div class="image-preview">
             <img src="./jingliu.webp" alt="char">
-            <button class="glass-button" onclick="window.open('https://www.linkedin.com/in/muhammad-alvin-zufar-saputra-92a600334/', '_blank')">
+            <button title="Find me on Linkedin" class="glass-button" onclick="window.open('https://www.linkedin.com/in/muhammad-alvin-zufar-saputra-92a600334/', '_blank')">
                 <img src="./linkedin.png" alt="linkedin" class="logo-size">
                 <span class="github-text">Linkedin</span>
             </button>
-            <video paused loop muted playsinline aria-hidden="true">
+            <video paused loop playsinline aria-hidden="true">
                 <source src="./jingliu.webm" type="video/webm">
             </video>
             <span class="overlay">
@@ -71,13 +88,14 @@
                 </div>
             </span>
         </div>
+
         <div class="image-preview">
             <img src="./furina.webp" alt="char">
-            <button class="glass-button" onclick="window.open('mailto:nailvinz@gmail.com', '_blank')">
+            <button title="Find me on Twitter" class="glass-button" onclick="window.open('https://x.com/tritag0nist', '_blank')">
                 <img src="./gmail.png" alt="linkedin" class="logo-size">
-                <span class="github-text">Gmail</span>
+                <span class="github-text">Twitter</span>
             </button>
-            <video paused loop muted playsinline aria-hidden="true">
+            <video paused loop playsinline aria-hidden="true">
                 <source src="./furina.webm" type="video/webm">
             </video>
             <span class="overlay">
@@ -87,7 +105,15 @@
                 </div>
             </span>
         </div>
+
     </div>
+
+
+
+    <nav class="navbar" style="position: relative; background: linear-gradient(135deg, rgba(10, 10, 30, 0.9), rgba(36, 36, 60, 0.9)); padding: 1rem 2rem; border-radius: 0px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37); backdrop-filter: blur(10px); border: 0px solid rgba(255, 255, 255, 0.18); display: flex; justify-content: flex-start; align-items: center;">
+        <div class="date-time" style="font-size: 14px; color: white; margin-left: auto;"></div>
+    </nav> 
+     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="script.js"></script>
 
